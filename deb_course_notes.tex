@@ -1,0 +1,187 @@
+\documentclass[10,portrait]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{
+            pdftitle={DEB notes},
+            pdfauthor={1 Department of Biology, Emory University, 1510 Clifton Road NE, Atlanta, GA, USA, 30322},
+            colorlinks=true,
+            linkcolor=blue,
+            citecolor=red,
+            urlcolor=blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage[margin=1in]{geometry}
+\usepackage[]{biblatex}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\title{DEB notes}
+\author{\emph{\textsuperscript{1} Department of Biology, Emory University, 1510
+Clifton Road NE, Atlanta, GA, USA, 30322} \footnote{`This Supplementary
+  Material can be found at
+  \url{https://github.com/darwinanddavis/DEB_notes}'}}
+\date{}
+
+\begin{document}
+\maketitle
+
+{
+\hypersetup{linkcolor=black}
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+~
+
+Date: 2018-08-15\\
+R version: 3.5.0\\
+*Corresponding author:
+\href{mailto:matthew.malishev@gmail.com}{\nolinkurl{matthew.malishev@gmail.com}}
+
+\newpage   
+
+\subsection{Overview}\label{overview}
+
+Summarised notes from DEB workshops, telecourses, lectures, and
+discussions.
+
+\subsubsection{Reserve mobilisation}\label{reserve-mobilisation}
+
+Conductance determines mobilisation rate from reserve to structure\\
+The larger the SA of reserve, the more mobilisation is possible and thus
+faster maintenance and growth because due to more SA - SA scales slower
+than volume-specific flows
+
+Reserve dynamics f = 1 (max feeding rate)\\
+\[
+\frac
+  {d E}
+  {d t}  
+  = \frac
+  {f\{\dot{p}_{AM}\}}
+  {L}  
+  - \frac  
+  {\dot{v}[E]}  
+  {L}   
+\]
+
+\([E_{M}]\) = max reserve. Reserve doesn't change.
+
+\[
+= \frac
+  {\{\dot{p}_{AM}\}}
+  {L} - 
+  \frac
+  {\dot{v}[E_{M}]}
+  {L}    
+\] \[
+\therefore 
+[E_{M}]
+= \frac
+  {\{\dot{p}_{AM}\}}
+  {\dot{v}}
+\] Scaled reserve \[
+e =
+\frac
+{[E]}
+{[E_{M}]}  
+\]
+
+\[
+\frac
+{de}
+{dt}
+= \frac
+{[E] /[E_{M}]}
+{dt} 
+= \frac
+{f\dot{v}}
+{L}  - 
+\frac
+{e\dot{v}}
+{L}     
+\]\\
+\[
+= \frac
+{\dot{v} (f – e)}
+{L} 
+\]
+
+Under steady state, reserve doesn't change\\
+\[
+0 =
+\frac
+{\dot{v} (f – e)}
+{L}
+\ \ \ \
+\text{or}
+\ \ \ \ f = e
+\] \#\#\# Length\\
+Getting maximum length \(L_{M}\)
+
+\[
+\frac
+{dV}
+{dt}
+= V\dot{r}  
+\]
+
+Can rewrite \(r\) using scaled reserve \(e\)
+
+\[
+\dot{r} = f
+\]
+
+\subsubsection{Weak homeostasis}\label{weak-homeostasis}
+
+Structural isomorphy implies weak homeostasis Weak homeostasis depends
+on ratio of reserve to structure \((d[E] / dt)\)
+
+\printbibliography
+
+\end{document}

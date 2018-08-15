@@ -1,0 +1,185 @@
+---
+title: DEB notes
+author: 
+- |-
+  _^1^ Department of Biology, Emory University, 1510 Clifton Road NE, Atlanta, GA, USA, 30322_
+  <!-- _^2^ _ -->
+  ^['This Supplementary Material can be found at https://github.com/darwinanddavis/DEB_notes']
+#bibliography:/Users/malishev/Documents/Melbourne Uni/Thesis_2016/library.bib
+fontsize: 10
+geometry: margin=1in
+documentclass: article
+linkcolor: blue
+urlcolor: blue
+citecolor: red
+output:
+  pdf_document:
+    includes:
+      in_header: # add .tex file with header content
+    highlight: tango
+    template: null
+    toc: yes
+    toc_depth: 3
+    number_sections: false
+    fig_width: 6
+    fig_height: 5
+    fig_caption: true
+    df_print: tibble 
+    citation_package: biblatex # natbib
+    latex_engine: pdflatex #xelatex  # lualatex
+    keep_tex: true # keep .tex file in dir 
+  html_document:
+    css: # custom.css
+    highlight: tango
+    code_folding: show
+    toc: yes
+    toc_depth: 3
+    number_sections: no
+    toc_float: yes
+  word_document:
+    highlight: tango
+    keep_md: yes
+    pandoc_args: --smart
+    #reference: mystyles.docx
+    toc: yes
+inludes:
+  before_body: before_body.tex
+subtitle: 
+tags:
+- nothing
+- nothingness
+params: 
+  date: !r Sys.Date()
+  version: !r getRversion()
+  email: "matthew.malishev@gmail.com"
+  dir: "/Users/malishev/Documents/Emory/research/deb"
+  doi: https://github.com/darwinanddavis/DEB_notes
+classoption: portrait
+vignette: >
+  %\VignetteIndexEntry{DEB telecourse notes}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+# ^['https://github.com/darwinanddavis/DEB_notes'] # footnote
+---
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });
+</script>
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+ eval = TRUE, tidy.opts=list(width.cutoff=60), tidy=TRUE, echo=TRUE, warning = FALSE, message = FALSE
+)
+```
+
+\  
+
+Date: `r params$date`  
+R version: `r params$version`   
+*Corresponding author: `r params$email`  
+
+\newpage   
+
+## Overview  
+
+Summarised notes from DEB workshops, telecourses, lectures, and discussions.  
+
+### Reserve mobilisation
+Conductance determines mobilisation rate from reserve to structure  
+The larger the SA of reserve, the more mobilisation is possible and thus faster maintenance and growth because due to more SA 
+	- SA scales slower than volume-specific flows   
+
+Reserve dynamics
+f = 1 (max feeding rate)  
+$$
+\frac
+  {d E}
+  {d t}  
+  = \frac
+  {f\{\dot{p}_{AM}\}}
+  {L}  
+  - \frac  
+  {\dot{v}[E]}  
+  {L}   
+$$
+
+$[E_{M}]$ = max reserve. Reserve doesn’t change.
+
+$$
+= \frac
+  {\{\dot{p}_{AM}\}}
+  {L} - 
+  \frac
+  {\dot{v}[E_{M}]}
+  {L}    
+$$
+$$
+\therefore 
+[E_{M}]
+= \frac
+  {\{\dot{p}_{AM}\}}
+  {\dot{v}}
+$$
+Scaled reserve
+$$
+e =
+\frac
+{[E]}
+{[E_{M}]}  
+$$
+
+$$
+\frac
+{de}
+{dt}
+= \frac
+{[E] /[E_{M}]}
+{dt} 
+= \frac
+{f\dot{v}}
+{L}  - 
+\frac
+{e\dot{v}}
+{L}     
+$$  
+$$
+= \frac
+{\dot{v} (f – e)}
+{L} 
+$$
+
+Under steady state, reserve doesn’t change   
+$$
+0 =
+\frac
+{\dot{v} (f – e)}
+{L}
+\ \ \ \
+\text{or}
+\ \ \ \ f = e
+$$
+### Length  
+Getting maximum length $L_{M}$    
+
+$$
+\frac
+{dV}
+{dt}
+= V\dot{r}  
+$$
+
+Can rewrite $r$ using scaled reserve $e$
+
+$$
+\dot{r} = f
+$$
+
+
+### Weak homeostasis
+Structural isomorphy implies weak homeostasis
+Weak homeostasis depends on ratio of reserve to structure $(d[E] / dt)$
+
+
+
+
+
