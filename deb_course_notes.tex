@@ -25,7 +25,7 @@
 \usepackage[unicode=true]{hyperref}
 \PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
 \hypersetup{
-            pdftitle={Host-parasite DEB model equations},
+            pdftitle={Dynamic Energy Budget (DEB) theory summary notes},
             colorlinks=true,
             linkcolor=pink,
             citecolor=red,
@@ -60,7 +60,7 @@
 \makeatother
 
 
-\title{Host-parasite DEB model equations}
+\title{Dynamic Energy Budget (DEB) theory summary notes}
 \author{Matthew
 Malishev\textsuperscript{1}*\\[2\baselineskip]\emph{\textsuperscript{1}
 Department of Biology, Emory University, 1510 Clifton Road NE, Atlanta,
@@ -72,12 +72,12 @@ GA, USA, 30322}}
 
 {
 \hypersetup{linkcolor=black}
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{4}
 \tableofcontents
 }
 ~
 
-Date: 2018-08-17\\
+Date: 2018-09-04\\
 R version: 3.5.0\\
 *Corresponding author:
 \href{mailto:matthew.malishev@gmail.com}{\nolinkurl{matthew.malishev@gmail.com}}
@@ -160,7 +160,10 @@ Under steady state, reserve doesn't change\\
 \ \ \ \
 \text{or}
 \ \ \ \ f = e
-\] \#\#\# Length\\
+\]
+
+\subsubsection{Length}\label{length}
+
 Getting maximum length \(L_{M}\)
 
 \[
@@ -173,13 +176,42 @@ Getting maximum length \(L_{M}\)
 Can rewrite \(r\) using scaled reserve \(e\)
 
 \[
-\dot{r} = f
+\dot{r} = 
+\dot{v}
+\frac
+{\frac
+{e}
+{L} - 
+(1 + \frac
+{L_{T}} 
+{L}
+) /
+{L_{m}}}
+{e + g}
+\] Getting \(L_{m}\)
+
+\[
+\frac
+{dV}
+{dt} = 
+V\dot{r}
+\]
+
+To find \(V_{m} = Lm^{3}\), set \(f = 1\) and \(\frac{dV}{dt} = 0\),
+then solve for \(V = V_{m}\)
+
+\[
+L_{m}
+=
+\frac
+{\kappa\{\dot{p}_{Am}\}}
+{[\dot{p}_{M}]}
 \]
 
 \subsubsection{Weak homeostasis}\label{weak-homeostasis}
 
 Structural isomorphy implies weak homeostasis Weak homeostasis depends
-on ratio of reserve to structure \((d[E] / dt)\)
+on ratio of reserve to structure \(\frac{d[E]}{dt}\)
 
 \printbibliography
 

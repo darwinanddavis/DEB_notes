@@ -1,5 +1,5 @@
 ---
-title: Host-parasite DEB model equations
+title: Dynamic Energy Budget (DEB) theory summary notes
 author: |
  | Matthew Malishev^1^*  
  |
@@ -16,7 +16,7 @@ output:
     highlight: tango
     code_folding: hide
     toc: yes
-    toc_depth: 3
+    toc_depth: 4
     number_sections: no
     toc_float: yes
   pdf_document:
@@ -25,10 +25,10 @@ output:
     highlight: tango
     template: null
     toc: yes
-    toc_depth: 3
+    toc_depth: 4
     number_sections: false
-    fig_width: 4
-    fig_height: 5
+    fig_width: 5
+    fig_height: 6
     fig_caption: true
     df_print: tibble 
     citation_package: biblatex # natbib
@@ -176,8 +176,10 @@ $$
 \text{or}
 \ \ \ \ f = e
 $$
+
 ### Length  
-Getting maximum length $L_{M}$    
+  
+Getting maximum length $L_{M}$      
 
 $$
 \frac
@@ -189,13 +191,41 @@ $$
 Can rewrite $r$ using scaled reserve $e$
 
 $$
-\dot{r} = f
+\dot{r} = 
+\dot{v}
+\frac
+{\frac
+{e}
+{L} - 
+(1 + \frac
+{L_{T}} 
+{L}
+) /
+{L_{m}}}
+{e + g}
+$$
+Getting $L_{m}$    
+
+$$
+\frac
+{dV}
+{dt} = 
+V\dot{r}
 $$
 
-
+To find $V_{m} = Lm^{3}$, set $f = 1$ and $\frac{dV}{dt} = 0$, then solve for $V = V_{m}$    
+  
+$$
+L_{m}
+=
+\frac
+{\kappa\{\dot{p}_{Am}\}}
+{[\dot{p}_{M}]}
+$$
+  
 ### Weak homeostasis
 Structural isomorphy implies weak homeostasis
-Weak homeostasis depends on ratio of reserve to structure $(d[E] / dt)$
+Weak homeostasis depends on ratio of reserve to structure $\frac{d[E]}{dt}$  
 
 
 
