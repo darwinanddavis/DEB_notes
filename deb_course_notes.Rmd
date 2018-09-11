@@ -100,8 +100,7 @@ R version: `r params$version`
 
 ## Overview   
 
-Summarised notes from DEB workshops, telecourses, lectures, and discussions.  
-
+Summarised notes from DEB workshops, telecourses, lectures, and discussions.    
 ### Reserve mobilisation
 Conductance determines mobilisation rate from reserve to structure  
 The larger the SA of reserve, the more mobilisation is possible and thus faster maintenance and growth because due to more SA 
@@ -223,8 +222,8 @@ L_{m}
 {[\dot{p}_{M}]}
 $$
   
-### Weak homeostasis
-Structural isomorphy implies weak homeostasis
+### Weak homeostasis  
+Structural isomorphy implies weak homeostasis  
 Weak homeostasis depends on ratio of reserve to structure $\frac{d[E]}{dt}$  
 
 
