@@ -100,8 +100,9 @@ R version: `r params$version`
 
 ## Overview   
 
-Summarised notes from DEB workshops, telecourses, lectures, and discussions.    
-### Reserve mobilisation
+Summarised notes from DEB workshops, telecourses, lectures, and discussions.  
+
+### Reserve mobilisation  
 Conductance determines mobilisation rate from reserve to structure  
 The larger the SA of reserve, the more mobilisation is possible and thus faster maintenance and growth because due to more SA 
 	- SA scales slower than volume-specific flows   
@@ -178,7 +179,7 @@ $$
 
 ### Length  
   
-Getting maximum length $L_{M}$      
+Getting maximum length $L_{m}$      
 
 $$
 \frac
