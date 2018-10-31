@@ -34,6 +34,9 @@
 \urlstyle{same}  % don't use monospace font for urls
 \usepackage[margin=1in]{geometry}
 \usepackage[]{biblatex}
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
 \IfFileExists{parskip.sty}{%
 \usepackage{parskip}
 }{% else
@@ -77,10 +80,26 @@ GA, USA, 30322}}
 }
 ~
 
-Date: 2018-10-18\\
+Date: 2018-10-31\\
 R version: 3.5.0\\
 *Corresponding author:
 \href{mailto:matthew.malishev@gmail.com}{\nolinkurl{matthew.malishev@gmail.com}}
+
+\newpage  
+
+\subsection{List of parameters and
+variables}\label{list-of-parameters-and-variables}
+
+\begin{longtable}[]{@{}cl@{}}
+\toprule
+Parameter & Definition\tabularnewline
+\midrule
+\endhead
+\(E\) & energy reserve\tabularnewline
+\([E]\) & energy reserve per volume\tabularnewline
+\(e\) & scaled energy reserve\tabularnewline
+\bottomrule
+\end{longtable}
 
 \newpage  
 
