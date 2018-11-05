@@ -100,6 +100,7 @@ R version: `r params$version`
 
 ## List of parameters and variables  
 
+Table 1. Dynamic Energy Budget parameters and variables used in the standard DEB model.    
 |Parameter|Definition|  
 |:------:|:------|  
 | $E$ | energy reserve |  
@@ -110,7 +111,6 @@ R version: `r params$version`
 | $L$ | structural length |   
 | $\dot{p}_{AM}$ | maximum assimilation rate |  
 | $\dot{v}$ | energy conductance |     
-
 
 \newpage  
 
