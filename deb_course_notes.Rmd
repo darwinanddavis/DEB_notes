@@ -103,8 +103,14 @@ R version: `r params$version`
 |Parameter|Definition|  
 |:------:|:------|  
 | $E$ | energy reserve |  
-| $[E]$ | energy reserve per volume |  
-| $e$ | scaled energy reserve |  
+| $[E]$ | energy reserve per volume (reserve density) |  
+| $e$ | scaled energy reserve |
+| $[E_M]$ | maximum reserve density |    
+| $f$ | functional feeding response |  
+| $L$ | structural length |   
+| $\dot{p}_{AM}$ | maximum assimilation rate |  
+| $\dot{v}$ | energy conductance |     
+
 
 \newpage  
 
@@ -114,8 +120,8 @@ Summarised notes from DEB workshops, telecourses, lectures, and discussions.
 
 ### Reserve mobilisation  
 Conductance determines mobilisation rate from reserve to structure  
-The larger the SA of reserve, the more mobilisation is possible and thus faster maintenance and growth because due to more SA 
-	- SA scales slower than volume-specific flows   
+The larger the surface area of reserve, the more mobilisation is possible and thus faster maintenance and growth due to more surface area.  
+- surface area scales slower than volume-specific energy flows.     
 
 Reserve dynamics
 f = 1 (max feeding rate)  

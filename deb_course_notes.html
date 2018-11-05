@@ -230,7 +230,7 @@ div.tocify {
   MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });
 </script>
 <p> </p>
-<p>Date: 2018-10-31<br />
+<p>Date: 2018-11-05<br />
 R version: 3.5.0<br />
 *Corresponding author: <a href="mailto:matthew.malishev@gmail.com">matthew.malishev@gmail.com</a></p>
 
@@ -250,11 +250,31 @@ R version: 3.5.0<br />
 </tr>
 <tr class="even">
 <td align="center"><span class="math inline">\([E]\)</span></td>
-<td align="left">energy reserve per volume</td>
+<td align="left">energy reserve per volume (reserve density)</td>
 </tr>
 <tr class="odd">
 <td align="center"><span class="math inline">\(e\)</span></td>
 <td align="left">scaled energy reserve</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\([E_M]\)</span></td>
+<td align="left">maximum reserve density</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(f\)</span></td>
+<td align="left">functional feeding response</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(L\)</span></td>
+<td align="left">structural length</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\dot{p}_{AM}\)</span></td>
+<td align="left">maximum assimilation rate</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\dot{v}\)</span></td>
+<td align="left">energy conductance</td>
 </tr>
 </tbody>
 </table>
@@ -266,7 +286,8 @@ R version: 3.5.0<br />
 <div id="reserve-mobilisation" class="section level3">
 <h3>Reserve mobilisation</h3>
 <p>Conductance determines mobilisation rate from reserve to structure<br />
-The larger the SA of reserve, the more mobilisation is possible and thus faster maintenance and growth because due to more SA - SA scales slower than volume-specific flows</p>
+The larger the surface area of reserve, the more mobilisation is possible and thus faster maintenance and growth due to more surface area.<br />
+- surface area scales slower than volume-specific energy flows.</p>
 <p>Reserve dynamics f = 1 (max feeding rate)<br />
 <span class="math display">\[
 \frac
