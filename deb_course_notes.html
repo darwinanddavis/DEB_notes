@@ -230,59 +230,34 @@ div.tocify {
   MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });
 </script>
 <p> </p>
-<p>Date: 2018-11-05<br />
+<p>Date: 2019-01-17<br />
 R version: 3.5.0<br />
 *Corresponding author: <a href="mailto:matthew.malishev@gmail.com">matthew.malishev@gmail.com</a></p>
+<p>TO DO<br />
+- update parameter estimation section</p>
 
 <div id="list-of-parameters-and-variables" class="section level2">
 <h2>List of parameters and variables</h2>
-<table>
-<thead>
-<tr class="header">
-<th align="center">Parameter</th>
-<th align="left">Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center"><span class="math inline">\(E\)</span></td>
-<td align="left">energy reserve</td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math inline">\([E]\)</span></td>
-<td align="left">energy reserve per volume (reserve density)</td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math inline">\(e\)</span></td>
-<td align="left">scaled energy reserve</td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math inline">\([E_M]\)</span></td>
-<td align="left">maximum reserve density</td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math inline">\(f\)</span></td>
-<td align="left">functional feeding response</td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math inline">\(L\)</span></td>
-<td align="left">structural length</td>
-</tr>
-<tr class="odd">
-<td align="center"><span class="math inline">\(\dot{p}_{AM}\)</span></td>
-<td align="left">maximum assimilation rate</td>
-</tr>
-<tr class="even">
-<td align="center"><span class="math inline">\(\dot{v}\)</span></td>
-<td align="left">energy conductance</td>
-</tr>
-</tbody>
-</table>
+<p>Table 1. Dynamic Energy Budget parameters and variables used in the standard DEB model.<br />
+|Parameter|Definition|<br />
+|:——:|:——|<br />
+| <span class="math inline">\(E\)</span> | energy reserve |<br />
+| <span class="math inline">\([E]\)</span> | energy reserve per volume (reserve density) |<br />
+| <span class="math inline">\(e\)</span> | scaled energy reserve | | <span class="math inline">\([E_M]\)</span> | maximum reserve density |<br />
+| <span class="math inline">\(f\)</span> | functional feeding response |<br />
+| <span class="math inline">\(L\)</span> | structural length |<br />
+| <span class="math inline">\(\dot{p}_{AM}\)</span> | maximum assimilation rate |<br />
+| <span class="math inline">\(\dot{v}\)</span> | energy conductance |</p>
 
 </div>
 <div id="overview" class="section level2">
 <h2>Overview</h2>
 <p>Summarised notes from DEB workshops, telecourses, lectures, and discussions.</p>
+<div id="parameter-estimation" class="section level3">
+<h3>Parameter estimation</h3>
+<p>From (<a href="http://www.debtheory.org/wiki/index.php?title=AmP_estimation_procedure#Parameter_estimation" class="uri">http://www.debtheory.org/wiki/index.php?title=AmP_estimation_procedure#Parameter_estimation</a>)</p>
+<p>Estimating parameter values from a set of data sets is done in the AmP collection on the basis of the minimization of a parameter-free loss function, see Marques et al 2018a and 2018b, which takes the different dimensions of the various data sets into account, and penalizes over-estimation as hard as under-estimation, using all data sets simultaneously. The minimum is found using a Nelder-Mead simplex method. A simplex is a set of parameter-sets with a number of elements that is one more than the number of free parameters. One of the elements in the set is the specified initial parameter set, the seed, the others are generated automatically in its “neighbourhood”. The simplex method tries to replace the worst parameter set by one that is better than the best one, i.e. gives a smaller value of the loss-function. During the procedure the parameter are (optionally, but by default) filtered to avoid that combinations of values are outside their logical domain (Lika et al 2014).</p>
+</div>
 <div id="reserve-mobilisation" class="section level3">
 <h3>Reserve mobilisation</h3>
 <p>Conductance determines mobilisation rate from reserve to structure<br />

@@ -96,12 +96,16 @@ Date: `r params$date`
 R version: `r params$version`  
 *Corresponding author: `r params$email`  
 
+TO DO  
+- update parameter estimation section  
+
+
 \newpage  
 
 ## List of parameters and variables  
 
-Table 1. Dynamic Energy Budget parameters and variables used in the standard DEB model.    
-|Parameter|Definition|  
+Table 1. Dynamic Energy Budget parameters and variables used in the standard DEB model.      
+|Parameter|Definition|    
 |:------:|:------|  
 | $E$ | energy reserve |  
 | $[E]$ | energy reserve per volume (reserve density) |  
@@ -110,13 +114,19 @@ Table 1. Dynamic Energy Budget parameters and variables used in the standard DEB
 | $f$ | functional feeding response |  
 | $L$ | structural length |   
 | $\dot{p}_{AM}$ | maximum assimilation rate |  
-| $\dot{v}$ | energy conductance |     
+| $\dot{v}$ | energy conductance |       
 
 \newpage  
 
 ## Overview   
 
 Summarised notes from DEB workshops, telecourses, lectures, and discussions.  
+
+### Parameter estimation 
+
+From (http://www.debtheory.org/wiki/index.php?title=AmP_estimation_procedure#Parameter_estimation)    
+
+Estimating parameter values from a set of data sets is done in the AmP collection on the basis of the minimization of a parameter-free loss function, see Marques et al 2018a and 2018b, which takes the different dimensions of the various data sets into account, and penalizes over-estimation as hard as under-estimation, using all data sets simultaneously. The minimum is found using a Nelder-Mead simplex method. A simplex is a set of parameter-sets with a number of elements that is one more than the number of free parameters. One of the elements in the set is the specified initial parameter set, the seed, the others are generated automatically in its "neighbourhood". The simplex method tries to replace the worst parameter set by one that is better than the best one, i.e. gives a smaller value of the loss-function. During the procedure the parameter are (optionally, but by default) filtered to avoid that combinations of values are outside their logical domain (Lika et al 2014).
 
 ### Reserve mobilisation  
 Conductance determines mobilisation rate from reserve to structure  
